@@ -1,4 +1,5 @@
-﻿using Calculator.Interfaces;
+﻿using Calculator.Classes;
+using Calculator.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
