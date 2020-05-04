@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Calculator.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 
 namespace Calculator
@@ -11,6 +12,7 @@ namespace Calculator
 
             var serviceProvider = new ServiceCollection()
             .AddTransient<IAddService, AddService>()
+            .AddTransient<ISubtractService, SubtractService>()
             .AddSingleton<ICalculator, Calculator>()
             .BuildServiceProvider();
 
