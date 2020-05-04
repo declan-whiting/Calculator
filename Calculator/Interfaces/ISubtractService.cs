@@ -6,5 +6,6 @@ namespace Calculator.Interfaces
 {
     interface ISubtractService
     {
+        int Subtract(int a, int b);
     }
 }

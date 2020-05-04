@@ -5,7 +5,8 @@ using System.Text;
 
 namespace Calculator.Classes
 {
-    class SubtractService : ISubtractService
+    public class SubtractService : ISubtractService
     {
+        public int Subtract(int a, int b) => a - b;
     }
 }
